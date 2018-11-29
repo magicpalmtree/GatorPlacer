@@ -7,6 +7,7 @@ var courseTaught = new Schema({
     code: {
         type: String,
         required: true,
+        unique: false
     },
     name: {
         type: String,
@@ -29,7 +30,7 @@ var courseTaught = new Schema({
     /*classType :{
         type : String,
         enum : ['Office Hours', 'Lecture', 'Discussion'],
-        required : [true, "Need a role"]
+        required : [true, "Need a class type"]
     }*/
 });
 
